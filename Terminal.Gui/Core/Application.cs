@@ -580,7 +580,7 @@ namespace Terminal.Gui {
 					}
 					firstIteration = false;
 
-					MainLoop.MainIteration ();
+					MainLoop?.MainIteration ();
 					Iteration?.Invoke ();
 				} else if (!wait) {
 					return;
